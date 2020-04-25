@@ -1,0 +1,25 @@
+  - platform: pioneer
+    host: 192.168.42.98
+    port: 8102
+    name: receiver
+    sources:
+      'CD': '01'
+#      'Tuner': '02'
+#      'DVD': '04'
+      'TV': '05'
+#      'Sat/Cbl': '06'
+#      'Video': '10'
+#      'DVR/BDR': '15'
+#      'iPod/USB': '17'
+#      'BD': '25'
+#      'Adapter': '33'
+#      'Netradio': '38'
+#      'Pandora': '41'
+#      'Media Server': '44'
+#      'Favorites': '45'
+#      'Game': '49'
+
+#  - platform: samsungtv
+#    host: 192.168.42.79
+#    name: ryans_tv
+#    mac: "64:1c:ae:77:2f:06"

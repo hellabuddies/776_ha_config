@@ -1,0 +1,52 @@
+  safe_mode: false
+  auto_start: false
+
+  filter:
+    include_entities:
+      - switch.airport_extreme
+      - switch.neon_sign
+      - switch.sink
+      - switch.snake_light
+      - light.ceiling_light
+      - switch.sonic_gateway
+      - media_player.receiver
+      - media_player.livingroom_tv
+      - media_player.ryans_tv
+      - switch.buzzer
+      - switch.snake_heat_lamp
+  entity_config:
+    switch.airport_extreme:
+      name: Airport Extreme
+      type: switch
+    switch.neon_sign:
+      name: Neon Sign
+      type: switch
+    switch.sink:
+      name: Sink
+      type: switch
+    light.ceiling_light:
+      name: Ceiling Light
+    switch.sonic_gateway:
+      name: Sonic Gateway
+      type: switch
+    media_player.receiver:
+      name: Receiver
+      feature_list:
+        - feature: on_off
+        - feature: toggle_mute
+    media_player.livingroom_tv:
+      name: Living Room TV
+      feature_list:
+        - feature: on_off
+        - feature: toggle_mute
+    media_player.ryans_tv:
+      name: Ryans TV
+      feature_list:
+        - feature: on_off
+        - feature: toggle_mute
+#    lock.buzzer:
+#      name: Buzzer
+    switch.buzzer:
+      name: Buzzer
+    switch.snake_heat_lamp:
+      name: Snake Heat Lamp

@@ -1,0 +1,39 @@
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+# http:
+#   base_url: example.duckdns.org:8123
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+homeassistant:
+  customize: !include customize.yaml
+lovelace:
+  mode: yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+python_script:
+wake_on_lan:
+api:
+#panel_custom: !include custom_panels.yaml
+lock: !include locks.yaml
+switch: !include switches.yaml
+frontend: !include frontend.yaml
+binary_sensor: !include binary_sensors.yaml
+media_player: !include media_players.yaml
+light: !include lights.yaml
+camera: !include cameras.yaml
+wemo: !include wemo.yaml
+homekit: !include homekit.yaml
+notify: #!include notifications.yaml
+http: !include http.yaml
+alexa: !include alexa.yaml
+tplink: !include tplink.yaml
+group: !include groups.yaml
+webostv: !include webostv.yaml
+samsungtv: !include samsungtv.yaml

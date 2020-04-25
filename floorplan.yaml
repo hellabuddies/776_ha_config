@@ -1,0 +1,6 @@
+name: 776 Floorplan
+image: /local/custom_ui/floorplan/floorplan.svg
+stylesheet: /local/custom_ui/floorplan/floorplan.css
+
+pan_zoom:
+date_format: MM-DD-YYYY

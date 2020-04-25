@@ -1,0 +1,77 @@
+## Light Groups ##
+tv_lights:
+  name: TV Lights
+  entities:
+    - light.oled_left
+    - light.oled_right
+snake_lights:
+  name: Snake Lights
+  entities:
+    - light.snake_heat_lamp
+    - light.snake_light
+
+## Rooms ##
+kitchen:
+  name: Kitchen
+  entities:
+    - switch.sink
+    - switch.kitchen_light
+living_room:
+  name: Living Room
+  entities:
+    - group.tv_lights
+    - switch.neon_sign
+   # - switch.snake_light
+   # - switch.snake_heat_lamp
+    - light.2_chainz
+    - light.chung
+    - light.buddha
+    - light.ceiling_light
+    - media_player.livingroom_tv
+    - media_player.receiver
+    #- switch.airport_extreme -- We do not want to turn this off if we turn the room off
+workshop:
+  name: Workshop
+  entities:
+    - light.bench
+    - light.sprig
+    - light.widgeon
+hallway:
+  name: Hallway
+  entities:
+    - light.yin
+    - light.yang
+#jimmys_room:
+    - light.hue_white_lamp_1
+    - light.hue_white_lamp_2
+lorens_room:
+  name: Loren's Room
+  entities:
+    - light.THOT
+    - light.sun
+    - light.moon
+ryans_room:
+  name: Ryan's Room
+  entities:
+    - light.follies
+    - light.king_of_diamonds
+    - light.mars
+    - light.odb
+    - light.hue_play_1
+    - light.hue_play_2
+    - media_player.ryans_tv
+    - group.ryans_bathroom
+ryans_bathroom:
+  name: The Throne
+  entities:
+    - light.yeezy
+    - light.jigga
+house:
+  name: House
+  entities:
+    - group.kitchen
+    - group.living_room
+    - group.workshop
+    - group.hallway
+    - group.lorens_room
+    - group.ryans_room

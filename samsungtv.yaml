@@ -1,0 +1,5 @@
+ - host: 192.168.42.79
+   turn_on_action:
+     - service: wake_on_lan.send_magic_packet
+       data:
+         mac: "64:1c:ae:77:2f:06" 
